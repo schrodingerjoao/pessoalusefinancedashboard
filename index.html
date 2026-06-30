@@ -211,11 +211,12 @@
 
   /* ── MOBILE BASE (este arquivo é otimizado primariamente para telas pequenas) ── */
   .fab{bottom:calc(24px + env(safe-area-inset-bottom));}
-  body{padding-bottom:calc(90px + env(safe-area-inset-bottom));}
+  body{padding-bottom:calc(90px + env(safe-area-inset-bottom));padding-top:env(safe-area-inset-top);}
+  .wrap{padding-top:max(28px, calc(env(safe-area-inset-top) + 18px));}
 
   @media (max-width:680px){
     html{font-size:13.5px;}
-    .wrap{padding:18px 14px 0;max-width:100%;}
+    .wrap{padding:max(34px, calc(env(safe-area-inset-top) + 22px)) 14px 0;max-width:100%;}
     .header{margin-bottom:22px;}
     .brand-icon{width:32px;height:32px;border-radius:10px;}
     .brand-icon svg{width:15px;height:15px;}
